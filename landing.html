@@ -209,38 +209,35 @@
 					for (var i = 0; i < data.length - 1; i++) {
 						if (data[i].id == "bitcoin") {
 							$("#BTC_Price").html(data[i].price_usd)
-							$("#BTC_Change").html((data[i].percent_change_1h).concat("%"))
-             				 $("#change_margin").html(Math.round(parseFloat(data[i].price_usd) * data[i].percent_change_1h/100 * 10000)/10000)           
+							$("#BTC_Change").html((data[i].percent_change_24h).concat("%"))          
 						}
 						if (data[i].id == "ethereum") {
 							$("#ETH_Price").html(data[i].price_usd)
-							$("#ETH_Change").html((data[i].percent_change_1h).concat("%"))
-             				 $("#ETH_change_margin").html(Math.round(parseFloat(data[i].price_usd) * data[i].percent_change_1h/100 * 10000)/10000)           
+							$("#ETH_Change").html((data[i].percent_change_24h).concat("%"))     
 						}
 						if (data[i].id == "litecoin") {
 							$("#LTC_Price").html(data[i].price_usd)
-							$("#LTC_Change").html((data[i].percent_change_1h).concat("%"))
-             				 $("#LTC_change_margin").html(Math.round(parseFloat(data[i].price_usd) * data[i].percent_change_1h/100 * 10000)/10000)           
+							$("#LTC_Change").html((data[i].percent_change_24h).concat("%"))
 						}
 						if (data[i].id == "iota") {
 							$("#MIOTA_Price").html(data[i].price_usd)
-							$("#MIOTA_Change").html((data[i].percent_change_1h).concat("%"))
-             				 $("#MIOTA_change_margin").html(Math.round(parseFloat(data[i].price_usd) * data[i].percent_change_1h/100 * 10000)/10000)           
+							$("#MIOTA_Change").html((data[i].percent_change_24h).concat("%"))         
 						}
 						if (data[i].id == "bitcoin-cash") {
 							$("#BCH_Price").html(data[i].price_usd)
-							$("#BCH_Change").html((data[i].percent_change_1h).concat("%"))
-             				 $("#BCH_change_margin").html(Math.round(parseFloat(data[i].price_usd) * data[i].percent_change_1h/100 * 10000)/10000)           
+							$("#BCH_Change").html((data[i].percent_change_24h).concat("%"))
 						}
 						if (data[i].id == "ripple") {
 							$("#XRP_Price").html(data[i].price_usd)
-							$("#XRP_Change").html((data[i].percent_change_1h).concat("%"))
-             				 $("#XRP_change_margin").html(Math.round(parseFloat(data[i].price_usd) * data[i].percent_change_1h/100 * 10000)/10000)           
+							$("#XRP_Change").html((data[i].percent_change_24h).concat("%"))          
 						}
 						if (data[i].id == "cardano") {
 							$("#ADA_Price").html(data[i].price_usd)
-							$("#ADA_Change").html((data[i].percent_change_1h).concat("%"))
-             				 $("#ADA_change_margin").html(Math.round(parseFloat(data[i].price_usd) * data[i].percent_change_1h/100 * 10000)/10000)           
+							$("#ADA_Change").html((data[i].percent_change_24h).concat("%"))
+                        if (data[i].id == "monero") {
+                            $("#XMR_Price").html(data[i].price_usd)
+                            $("#XMR_Change").html((data[i].percent_change_24h).concat("%"))
+                        }
 						}
 					}
 				});
