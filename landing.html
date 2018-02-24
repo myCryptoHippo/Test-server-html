@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 
 <html>
@@ -24,8 +25,9 @@
 							<li><a href="index.html">Home</a></li>
 							<li><a href="#">Resources</a></li>
 							<li><a href="#">About Us</a></li>
+                            <li><a href="login.php">Login In</a></li>
 
-							<li><a href="login.php" class="button special">Log In</a></li>
+							<li><a href="signup.php" class="button special">Sign Up</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -36,12 +38,12 @@
 						<header>
 							<h2>Cryptocurrency made easy </h2>
 							<h2>through a simulation.</h2>
-							<p style="color:grey;">Create an account today and start with 10k dollars.</p>
+							<p style="color:grey;">Create an account today and start with 10 thousand dollars.</p>
 							<p>
 							<div class="style1">
 								<div class="3u 6u(medium) 12u$(xsmall)">
 									<ul class="actions vertical"> 
-										<li><a href="signup.php" class="button special">Start trading</a></li>
+										<li><a href="signup.php" class="button special">Sign Up to Start Trading</a></li>
 									</ul>
 								</div>
 							</div>
@@ -50,7 +52,7 @@
 					</div>
 
 					<div class ="content">
-						<img src="images/Macbook.png" alt="" style ="width:50vw;height:30vw;">
+						<img src="images/MacbookPro.png" alt="" style ="width:50vw;height:30vw;">
 					</div>
 					<a href="#one" class="goto-next scrolly">Next</a>
 				</section>
@@ -140,7 +142,7 @@
 					<span class="image fit main bottom"><img src="images/pic04.jpg" alt="" /></span>
 					<div class="content">
 						<header>
-							<h2 style="color:white;">But, what's the blockchain? O_o</h2>
+							<h2 style="color:white;">But, what's the blockchain?</h2>
 							<p>The technology underlying cryptocurrencies.</p>
 						</header>
 						<p>The blockchain is a distributed ledger technology behind cryptocurrencies. It allows the transparency, anonymity and computational irreversability backing the technology. What does that mean? Find out by clicking "Learn More". </p>
@@ -190,7 +192,7 @@
 					<div class="container">
 						<header>
 							<h2 style="color:white">A hands-on learning experience.</h2>
-							<p>Join today and start with 5k.</p>
+							<p>Join today and start with 10k.</p>
 						</header>
 						<form method="post" action="#" class="container 50%">
 							<div class="row uniform 50%">
@@ -232,6 +234,7 @@
 					for (var i = 0; i < data.length - 1; i++) {
 						if (data[i].id == "bitcoin") {
 							$("#BTC_Price").html(data[i].price_usd)
+<<<<<<< HEAD
 							$("#BTC_Change").html((data[i].percent_change_1h).concat("%"))
 						}
 						if (data[i].id == "ethereum") {
@@ -257,6 +260,37 @@
 						if (data[i].id == "cardano") {
 							$("#ADA_Price").html(data[i].price_usd)
 							$("#ADA_Change").html((data[i].percent_change_1h).concat("%"))         
+=======
+							$("#BTC_Change").html((data[i].percent_change_24h).concat("%"))          
+						}
+						if (data[i].id == "ethereum") {
+							$("#ETH_Price").html(data[i].price_usd)
+							$("#ETH_Change").html((data[i].percent_change_24h).concat("%"))     
+						}
+						if (data[i].id == "litecoin") {
+							$("#LTC_Price").html(data[i].price_usd)
+							$("#LTC_Change").html((data[i].percent_change_24h).concat("%"))
+						}
+						if (data[i].id == "iota") {
+							$("#MIOTA_Price").html(data[i].price_usd)
+							$("#MIOTA_Change").html((data[i].percent_change_24h).concat("%"))         
+						}
+						if (data[i].id == "bitcoin-cash") {
+							$("#BCH_Price").html(data[i].price_usd)
+							$("#BCH_Change").html((data[i].percent_change_24h).concat("%"))
+						}
+						if (data[i].id == "ripple") {
+							$("#XRP_Price").html(data[i].price_usd)
+							$("#XRP_Change").html((data[i].percent_change_24h).concat("%"))          
+						}
+						if (data[i].id == "cardano") {
+							$("#ADA_Price").html(data[i].price_usd)
+							$("#ADA_Change").html((data[i].percent_change_24h).concat("%"))
+                        if (data[i].id == "monero") {
+                            $("#XMR_Price").html(data[i].price_usd)
+                            $("#XMR_Change").html((data[i].percent_change_24h).concat("%"))
+                        }
+>>>>>>> 33e5698f83d28c18f2bd6846eb5fd69ecb112580
 						}
 					}
 				});
