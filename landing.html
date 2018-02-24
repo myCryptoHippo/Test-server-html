@@ -11,6 +11,7 @@
 		<link rel="stylesheet" href="css/landing.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		
 	</head>
 	<body class="landing">
 		<div id="page-wrapper">
@@ -54,46 +55,70 @@
 					<a href="#one" class="goto-next scrolly">Next</a>
 				</section>
 
-			<!--one.five-->
-				<section id ="one.five" class = "smallSpotlight style1andhalf">
-					<div class="text" style="border-left:solid 1px">
-						<p style="font-size:1.2em; font-weight: 500; letter-spacing: 0.2em;"> BTC/USD </p>
-						<p id="BTC_Change"></p>
-						<p id="change_margin"></p>
-					</div> 
-					<div class="text">
-						<p style="font-size:1.2em; font-weight: 500; letter-spacing: 0.2em;"> ETH/USD </p>
-						<p id="ETH_Change"></p>
-						<p id="ETH_change_margin"></p>
-					</div> 
-					<div class="text">
-						<p style="font-size:1.2em; font-weight: 500; letter-spacing: 0.2em;"> LTC/USD </p>
-						<p id="LTC_Change"></p>
-						<p id="LTC_change_margin"></p>
-					</div> 
-					<div class="text">
-						<p style="font-size:1.2em; font-weight: 500; letter-spacing: 0.2em;"> IOT/USD </p>
-						<p id="MIOTA_Change"></p>
-						<p id="MIOTA_change_margin"></p>
-					</div> 
-					<div class="text">
-						<p style="font-size:1.2em; font-weight: 500; letter-spacing: 0.2em;"> BCH/USD </p>
-						<p id="BCH_Change"></p>
-						<p id="BCH_change_margin"></p>
-					</div> 
-					<div class="text">
-						<p style="font-size:1.2em; font-weight: 500; letter-spacing: 0.2em;"> XRP/USD </p>
-						<p id="XRP_Change"></p>
-						<p id="XRP_change_margin"></p>
-					</div> 
-					<div class="textRight">
-						<p style="font-size:1.2em; font-weight: 500; letter-spacing: 0.2em;"> ADA/USD </p>
-						<p id="ADA_Change"></p>
-						<p id="ADA_change_margin"></p>
-					</div> 
-
-
+			<!--Ticker-->
+				
+				<section id ="one.five" class = "smallSpotlight style1andhalf Tcontent">
+					<div class="ticker">
+							<div class="TickerNews" id="example">
+									<div class="ti_wrapper">
+										<div class="ti_slide">
+											<div class="ti_content">
+												  <div class="ti_news">
+													<div class="text">
+														<p style="font-size:1.2em; font-weight: 500; letter-spacing: 0.2em;"> BTC/USD </p>
+														<p id="BTC_Price"></p>
+														<p id="BTC_Change"></p>
+													</div>
+												</div>
+												<div class="ti_news">
+													<div class="text">
+															<p style="font-size:1.2em; font-weight: 500; letter-spacing: 0.2em;"> ETH/USD </p>
+															<p id="ETH_Price"></p>
+															<p id="ETH_Change"></p>
+													</div>
+												</div>
+												<div class="ti_news">
+													<div class="text">
+														<p style="font-size:1.2em; font-weight: 500; letter-spacing: 0.2em;"> LTC/USD </p>
+														<p id="LTC_Price"></p>
+														<p id="LTC_Change"></p>
+													</div> 
+												</div>
+												<div class="ti_news">
+													<div class="text">
+														<p style="font-size:1.2em; font-weight: 500; letter-spacing: 0.2em;"> IOT/USD </p>
+														<p id="MIOTA_Price"></p>
+														<p id="MIOTA_Change"></p>
+													</div> 
+												</div>
+												<div class="ti_news">
+													<div class="text">
+														<p style="font-size:1.2em; font-weight: 500; letter-spacing: 0.2em;"> BCH/USD </p>
+														<p id="BCH_Price"></p>
+														<p id="BCH_Change"></p>
+													</div> 
+												</div>
+												<div class="ti_news">
+													<div class="text">
+														<p style="font-size:1.2em; font-weight: 500; letter-spacing: 0.2em;"> XRP/USD </p>
+														<p id="XRP_Price"></p>
+														<p id="XRP_Change"></p>
+													</div> 
+												</div>
+												<div class="ti_news">
+													<div class="text">
+														<p style="font-size:1.2em; font-weight: 500; letter-spacing: 0.2em;"> ADA/USD </p>
+														<p id="ADA_Price"></p>
+														<p id="ADA_Change"></p>
+													</div>
+												</div>
+										</div>
+									</div>
+								</div>
+					</div>
 				</section>
+				
+				
 			<!-- Two -->
 				<section id="two" class="spotlight style2 right">
 					<span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
@@ -208,40 +233,38 @@
 						if (data[i].id == "bitcoin") {
 							$("#BTC_Price").html(data[i].price_usd)
 							$("#BTC_Change").html((data[i].percent_change_1h).concat("%"))
-             				 $("#change_margin").html(Math.round(parseFloat(data[i].price_usd) * data[i].percent_change_1h/100 * 10000)/10000)           
 						}
 						if (data[i].id == "ethereum") {
 							$("#ETH_Price").html(data[i].price_usd)
-							$("#ETH_Change").html((data[i].percent_change_1h).concat("%"))
-             				 $("#ETH_change_margin").html(Math.round(parseFloat(data[i].price_usd) * data[i].percent_change_1h/100 * 10000)/10000)           
+							$("#ETH_Change").html((data[i].percent_change_1h).concat("%"))    
 						}
 						if (data[i].id == "litecoin") {
 							$("#LTC_Price").html(data[i].price_usd)
 							$("#LTC_Change").html((data[i].percent_change_1h).concat("%"))
-             				 $("#LTC_change_margin").html(Math.round(parseFloat(data[i].price_usd) * data[i].percent_change_1h/100 * 10000)/10000)           
 						}
 						if (data[i].id == "iota") {
 							$("#MIOTA_Price").html(data[i].price_usd)
-							$("#MIOTA_Change").html((data[i].percent_change_1h).concat("%"))
-             				 $("#MIOTA_change_margin").html(Math.round(parseFloat(data[i].price_usd) * data[i].percent_change_1h/100 * 10000)/10000)           
+							$("#MIOTA_Change").html((data[i].percent_change_1h).concat("%"))   
 						}
 						if (data[i].id == "bitcoin-cash") {
 							$("#BCH_Price").html(data[i].price_usd)
 							$("#BCH_Change").html((data[i].percent_change_1h).concat("%"))
-             				 $("#BCH_change_margin").html(Math.round(parseFloat(data[i].price_usd) * data[i].percent_change_1h/100 * 10000)/10000)           
 						}
 						if (data[i].id == "ripple") {
 							$("#XRP_Price").html(data[i].price_usd)
-							$("#XRP_Change").html((data[i].percent_change_1h).concat("%"))
-             				 $("#XRP_change_margin").html(Math.round(parseFloat(data[i].price_usd) * data[i].percent_change_1h/100 * 10000)/10000)           
+							$("#XRP_Change").html((data[i].percent_change_1h).concat("%"))          
 						}
 						if (data[i].id == "cardano") {
 							$("#ADA_Price").html(data[i].price_usd)
-							$("#ADA_Change").html((data[i].percent_change_1h).concat("%"))
-             				 $("#ADA_change_margin").html(Math.round(parseFloat(data[i].price_usd) * data[i].percent_change_1h/100 * 10000)/10000)           
+							$("#ADA_Change").html((data[i].percent_change_1h).concat("%"))         
 						}
 					}
 				});
+			</script>
+			<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script> 
+			<script src="libs/jquery.tickerNews.min.js"></script> 
+			<script type="text/javascript">
+			$("#example").newsTicker();
 			</script>
 	</body>
 </html>

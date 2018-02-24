@@ -2858,22 +2858,10 @@
 		position: relative;
 		color: white;
 		line-height: 1.5em;
-		padding-top: 1.8%;
-		padding-left: 2.0%;
+		padding-top: 2vh;
 
 
-	}
-	.smallSpotlight .textRight {
-		display:inline-block;
-		width:13%; 
-		text-align:center;
-		border-right: solid 1px;
-	}
-	.smallSpotlight .text {
-		display:inline-block;
-		width:13%; 
-		text-align:center;
-		border-right: solid 1px;
+
 	}
 	.smallSpotlight .content {
 		-moz-transform: translate(0,0);
@@ -2889,13 +2877,16 @@
 		opacity: 1;
 		position: absolute;
 	}
-	.smallSpotlight.style1andhalf .content {
-		background-image: url("../images/purple.svg");
-		width: 13%;
-	}
-	.smallSpotlight .text1 {
+	
+	.smallSpotlight .text {
+		margin-left: 1%;
+		margin-right: 1%;
 		font-size: 1.1em;
 		font-weight: 300;
+		display: inline-block;
+		width:100%; 
+		text-align:center;
+		border-right: solid 1px;
 	}
 	.spotlight {
 		background-attachment: fixed;
@@ -4064,3 +4055,35 @@
 		color:black;
 	}
 }
+
+/*Ticker*/
+.Tcontent{
+	background: linear-gradient(to right, #8d369b , #f25896);
+}
+.TickerNews {
+	width: 100%;
+	height: 5vh;
+	line-height: 5vh;
+  }
+  
+  .ti_wrapper {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	height: 18vh;
+  }
+  
+  .ti_slide {
+	width: 30000px;
+	position: relative;
+	left: 0;
+	top: 0;
+  }
+  
+  .ti_content {
+	width: 8000px;
+	position: relative;
+	float: left;
+  }
+  
+  .ti_news { float: left; }
