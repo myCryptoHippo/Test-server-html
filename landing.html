@@ -67,97 +67,77 @@
 												  <div class="ti_news">
 													<div class="text">
 														<p style="font-size:1.2em; font-weight: 500; letter-spacing: 0.2em;"> BTC/USD </p>
-														<p id="BTC_Price"></p>
-														<p id="BTC_Change"></p>
+														<p class="BTC_Price"></p>
+														<p class="BTC_Change"></p>
 													</div>
 												</div>
 												<div class="ti_news">
 													<div class="text">
 															<p style="font-size:1.2em; font-weight: 500; letter-spacing: 0.2em;"> ETH/USD </p>
-															<p id="ETH_Price"></p>
-															<p id="ETH_Change"></p>
+															<p class="ETH_Price"></p>
+															<p class="ETH_Change"></p>
 													</div>
 												</div>
 												<div class="ti_news">
 													<div class="text">
 														<p style="font-size:1.2em; font-weight: 500; letter-spacing: 0.2em;"> LTC/USD </p>
-														<p id="LTC_Price"></p>
-														<p id="LTC_Change"></p>
+														<p class="LTC_Price"></p>
+														<p class="LTC_Change"></p>
 													</div> 
 												</div>
 												<div class="ti_news">
 													<div class="text">
 														<p style="font-size:1.2em; font-weight: 500; letter-spacing: 0.2em;"> IOT/USD </p>
-														<p id="MIOTA_Price"></p>
-														<p id="MIOTA_Change"></p>
+														<p class="MIOTA_Price"></p>
+														<p class="MIOTA_Change"></p>
 													</div> 
 												</div>
 												<div class="ti_news">
 													<div class="text">
 														<p style="font-size:1.2em; font-weight: 500; letter-spacing: 0.2em;"> BCH/USD </p>
-														<p id="BCH_Price"></p>
-														<p id="BCH_Change"></p>
+														<p class="BCH_Price"></p>
+														<p class="BCH_Change"></p>
 													</div> 
 												</div>
 												<div class="ti_news">
 													<div class="text">
 														<p style="font-size:1.2em; font-weight: 500; letter-spacing: 0.2em;"> XRP/USD </p>
-														<p id="XRP_Price"></p>
-														<p id="XRP_Change"></p>
+														<p class="XRP_Price"></p>
+														<p class="XRP_Change"></p>
 													</div> 
 												</div>
 												<div class="ti_news">
 													<div class="text">
 														<p style="font-size:1.2em; font-weight: 500; letter-spacing: 0.2em;"> ADA/USD </p>
-														<p id="ADA_Price"></p>
-														<p id="ADA_Change"></p>
+														<p class="ADA_Price"></p>
+														<p class="ADA_Change"></p>
 													</div>
 												</div>
 										</div>
 									</div>
 								</div>
 					</div>
+					<div class="timestamp">
+						<p id="time"></p>
+					</div>
 				</section>
+
 				
 				
 			<!-- Two -->
-				<section id="two" class="spotlight style2 right">
-					<span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
-					<div class="content">
-						<header>
-							<h2 style="color:white;">What is cryptocurrency?</h2>
-							<p>You've probably heard of it before, but what is it?</p>
-						</header>
+					<div style="margin-top:10vh; text-align:center;">
+						<h2 style="color:white; font-size:3em">What is cryptocurrency?</h2>
+					</div>
+					<div style="margin-top:5vh; text-align:center; margin-left:15vw; margin-right:15vw;font-size:2em;line-height:1em;">
 						<p>A cryptocurrency is a completely digital, decentralized currency running on blockchain technology. It is not controlled by any central figure, like a bank or government, and ensures complete anonymity. It is revolutionizing the way we exchange money.</p>
-						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
-						</ul>
 					</div>
-					<a href="#three" class="goto-next scrolly">Next</a>
-				</section>
 
-			<!-- Three -->
-				<section id="three" class="spotlight style3 left">
-					<span class="image fit main bottom"><img src="images/pic04.jpg" alt="" /></span>
-					<div class="content">
-						<header>
-							<h2 style="color:white;">But, what's the blockchain?</h2>
-							<p>The technology underlying cryptocurrencies.</p>
-						</header>
-						<p>The blockchain is a distributed ledger technology behind cryptocurrencies. It allows the transparency, anonymity and computational irreversability backing the technology. What does that mean? Find out by clicking "Learn More". </p>
-						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
-						</ul>
-					</div>
-					<a href="#four" class="goto-next scrolly">Next</a>
-				</section>
 
 			<!-- Four -->
 				<section id="four" class="wrapper style1 special fade-up">
 					<div class="container">
 						<header class="major">
-							<h2 style="color:white;">Get started today.</h2>
-							<p>No need to worry about using real money. We've got you covered with virtual dollars!</p>
+							<h2 style="color:white; font-size:3em">How to get Started</h2>
 						</header>
 						<div class="box alt">
 							<div class="row uniform">
@@ -228,48 +208,86 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/landing.js"></script>
-			<script>
-				$.get("https://api.coinmarketcap.com/v1/ticker/", function(data,status) {
-					for (var i = 0; i < data.length - 1; i++) {
-						if (data[i].id == "bitcoin") {
-							$("#BTC_Price").html(data[i].price_usd)
-							$("#BTC_Change").html((data[i].percent_change_24h).concat("%"))          
-						}
-						if (data[i].id == "ethereum") {
-							$("#ETH_Price").html(data[i].price_usd)
-							$("#ETH_Change").html((data[i].percent_change_24h).concat("%"))     
-						}
-						if (data[i].id == "litecoin") {
-							$("#LTC_Price").html(data[i].price_usd)
-							$("#LTC_Change").html((data[i].percent_change_24h).concat("%"))
-						}
-						if (data[i].id == "iota") {
-							$("#MIOTA_Price").html(data[i].price_usd)
-							$("#MIOTA_Change").html((data[i].percent_change_24h).concat("%"))         
-						}
-						if (data[i].id == "bitcoin-cash") {
-							$("#BCH_Price").html(data[i].price_usd)
-							$("#BCH_Change").html((data[i].percent_change_24h).concat("%"))
-						}
-						if (data[i].id == "ripple") {
-							$("#XRP_Price").html(data[i].price_usd)
-							$("#XRP_Change").html((data[i].percent_change_24h).concat("%"))          
-						}
-						if (data[i].id == "cardano") {
-							$("#ADA_Price").html(data[i].price_usd)
-							$("#ADA_Change").html((data[i].percent_change_24h).concat("%"))
-                        if (data[i].id == "monero") {
-                            $("#XMR_Price").html(data[i].price_usd)
-                            $("#XMR_Change").html((data[i].percent_change_24h).concat("%"))
-                        }
-						}
-					}
-				});
-			</script>
 			<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script> 
 			<script src="libs/jquery.tickerNews.min.js"></script> 
 			<script type="text/javascript">
 			$("#example").newsTicker();
 			</script>
+			<script>
+				$.get("https://api.coinmarketcap.com/v1/ticker/", function(data,status) {
+					for (var i = 0; i < data.length - 1; i++) {
+						if (data[i].id == "bitcoin") {
+							var a = document.getElementsByClassName("BTC_Price")
+							var b = document.getElementsByClassName("BTC_Change")
+							for(var x = 0; x<a.length; x++){
+								$(a[x]).html(data[i].price_usd+ " USD")
+								$(b[x]).html((data[i].percent_change_24h).concat("%"))
+							}
+							          
+						}
+						if (data[i].id == "ethereum") {
+							var a = document.getElementsByClassName("ETH_Price")
+							var b = document.getElementsByClassName("ETH_Change")
+							for(var x = 0; x<a.length; x++){
+								$(a[x]).html(data[i].price_usd + " USD")
+								$(b[x]).html((data[i].percent_change_24h).concat("%"))
+							}
+							     
+						}
+						if (data[i].id == "litecoin") {
+							var a = document.getElementsByClassName("LTC_Price")
+							var b = document.getElementsByClassName("LTC_Change")
+							for(var x = 0; x<a.length; x++){
+								$(a[x]).html(data[i].price_usd+ " USD")
+								$(b[x]).html((data[i].percent_change_24h).concat("%"))
+							}
+						}
+						if (data[i].id == "iota") {
+							var a = document.getElementsByClassName("MIOTA_Price")
+							var b = document.getElementsByClassName("MIOTA_Change")
+							for(var x = 0; x<a.length; x++){
+								$(a[x]).html(data[i].price_usd+ " USD")
+								$(b[x]).html((data[i].percent_change_24h).concat("%"))
+							}        
+						}
+						if (data[i].id == "bitcoin-cash") {
+							var a = document.getElementsByClassName("BCH_Price")
+							var b = document.getElementsByClassName("BCH_Change")
+							for(var x = 0; x<a.length; x++){
+								$(a[x]).html(data[i].price_usd+ " USD")
+								$(b[x]).html((data[i].percent_change_24h).concat("%"))
+							}
+						}
+						if (data[i].id == "ripple") {
+							var a = document.getElementsByClassName("XRP_Price")
+							var b = document.getElementsByClassName("XRP_Change")
+							for(var x = 0; x<a.length; x++){
+								$(a[x]).html(data[i].price_usd+ " USD")
+								$(b[x]).html((data[i].percent_change_24h).concat("%"))
+							}         
+						}
+						if (data[i].id == "cardano") {
+							var a = document.getElementsByClassName("ADA_Price")
+							var b = document.getElementsByClassName("ADA_Change")
+							for(var x = 0; x<a.length; x++){
+								$(a[x]).html(data[i].price_usd+ " USD")
+								$(b[x]).html((data[i].percent_change_24h).concat("%"))
+							}
+                        if (data[i].id == "monero") {
+							var a = document.getElementsByClassName("XMR_Price")
+							var b = document.getElementsByClassName("XMR_Change")
+							for(var x = 0; x<a.length; x++){
+								$(a[x]).html(data[i].price_usd+ " USD")
+								$(b[x]).html((data[i].percent_change_24h).concat("%"))
+							}
+                        }
+						}
+					}
+					var d = Date();
+
+					$("#time").html("Data Retrived at " + d)
+				});
+			</script>
+			
 	</body>
 </html>
