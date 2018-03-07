@@ -51,6 +51,10 @@
 		-webkit-text-size-adjust: none;
 	}
 
+    .breakwrapper {
+        padding: 6em 0 0 0;
+    }
+
 /* Box Model */
 
 	*, *:before, *:after {
@@ -216,6 +220,10 @@
 		.container {
 			width: 100% !important;
 		}
+        
+        .scalefix {
+            margin-top: 2em !important;
+        }
 
 	}
 
@@ -3753,7 +3761,7 @@
 
 				#banner .content {
 					padding: 4.0625em 1.5em 4.875em 1.5em;
-					background-image: url("../images/purple.svg");
+					/*background-image: url("../images/purple.svg");*/
 				}
 
 					#banner .content header h2 {
