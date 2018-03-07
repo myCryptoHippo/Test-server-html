@@ -32,7 +32,7 @@
 					<li>
 						<a href="index.html">About Us</a>
 					</li>
-					<!-- RAkeeb you need to link the about page here!-->
+					<!-- Rakeeb you need to link the about page here!-->
 					<li>
 						<a href="#">Resources</a>
 					</li>
@@ -129,7 +129,6 @@
 										<p style="font-size:1.2em; font-weight: 500; letter-spacing: 0.2em;"> ADA/USD </p>
 										<p class="ADA_Price"></p>
 										<p class="ADA_Change"></p>
-									</div>
 								</div>
 							</div>
 						</div>
@@ -144,12 +143,12 @@
 
 		<!-- Two -->
 		<section style ="background: white;" >
-			<div style="margin-top:10vh; text-align:center;">
+			<div style="margin-top:0vh; text-align:center;">
 				<h2 style="color:black; font-size:3em; font-family: 'Open Sans', sans-serif;">What is cryptocurrency?</h2>
 			</div>
-			<div style="margin-top:5vh; text-align:center; margin-left:15vw; margin-right:15vw;font-size:2em;line-height:1em;">
-				<p style="color: black; font-family: 'Nunito', sans-serif;">A cryptocurrency is a completely digital, decentralized currency running on blockchain technology. It is not controlled
-					by any central figure, like a bank or government, and ensures complete anonymity. It is revolutionizing the way we exchange
+			<div style="margin-top:0vh; text-align:center; margin-left:15vw; margin-right:15vw;font-size:2em;line-height:1em;">
+                <p style="color: black; font-family: 'Nunito', sans-serif;">A cryptocurrency is a completely digital, decentralized currency running on blockchain technology. </p>
+                <p style="color: black; font-family: 'Nunito', sans-serif;">It is not controlled by any central figure, like a bank or government, and ensures complete anonymity. It is revolutionizing the way we exchange
 					money.</p>
 			</div>
 		</section>
@@ -215,34 +214,16 @@
 		<footer id="footer">
 			<ul class="icons">
 				<li>
-					<a href="#" class="icon alt fa-twitter">
-						<span class="label">Twitter</span>
-					</a>
+                    <img src="images/Medium-Icon.png">
 				</li>
 				<li>
-					<a href="#" class="icon alt fa-facebook">
-						<span class="label">Facebook</span>
-					</a>
+					<img src="images/Instagram-Icon.png">
 				</li>
 				<li>
-					<a href="#" class="icon alt fa-linkedin">
-						<span class="label">LinkedIn</span>
-					</a>
+                    <img src="images/Facebook-Icon.png">
 				</li>
 				<li>
-					<a href="#" class="icon alt fa-instagram">
-						<span class="label">Instagram</span>
-					</a>
-				</li>
-				<li>
-					<a href="#" class="icon alt fa-github">
-						<span class="label">GitHub</span>
-					</a>
-				</li>
-				<li>
-					<a href="#" class="icon alt fa-envelope">
-						<span class="label">Email</span>
-					</a>
+                    <img src="images/Twitter-icon.png">
 				</li>
 			</ul>
 			<ul class="copyright">
@@ -275,7 +256,7 @@
 						var b = document.getElementsByClassName("BTC_Change")
 						for (var x = 0; x < a.length; x++) {
 							$(a[x]).html(data[i].price_usd + " USD")
-							$(b[x]).html((data[i].percent_change_24h).concat("%"))
+							$(b[x]).html((data[i].percent_change_1h).concat("%"))
 						}
 
 					}
@@ -284,7 +265,7 @@
 						var b = document.getElementsByClassName("ETH_Change")
 						for (var x = 0; x < a.length; x++) {
 							$(a[x]).html(data[i].price_usd + " USD")
-							$(b[x]).html((data[i].percent_change_24h).concat("%"))
+							$(b[x]).html((data[i].percent_change_1h).concat("%"))
 						}
 
 					}
@@ -293,7 +274,7 @@
 						var b = document.getElementsByClassName("LTC_Change")
 						for (var x = 0; x < a.length; x++) {
 							$(a[x]).html(data[i].price_usd + " USD")
-							$(b[x]).html((data[i].percent_change_24h).concat("%"))
+							$(b[x]).html((data[i].percent_change_1h).concat("%"))
 						}
 					}
 					if (data[i].id == "iota") {
@@ -301,7 +282,7 @@
 						var b = document.getElementsByClassName("MIOTA_Change")
 						for (var x = 0; x < a.length; x++) {
 							$(a[x]).html(data[i].price_usd + " USD")
-							$(b[x]).html((data[i].percent_change_24h).concat("%"))
+							$(b[x]).html((data[i].percent_change_1h).concat("%"))
 						}
 					}
 					if (data[i].id == "bitcoin-cash") {
@@ -309,7 +290,7 @@
 						var b = document.getElementsByClassName("BCH_Change")
 						for (var x = 0; x < a.length; x++) {
 							$(a[x]).html(data[i].price_usd + " USD")
-							$(b[x]).html((data[i].percent_change_24h).concat("%"))
+							$(b[x]).html((data[i].percent_change_1h).concat("%"))
 						}
 					}
 					if (data[i].id == "ripple") {
@@ -317,7 +298,7 @@
 						var b = document.getElementsByClassName("XRP_Change")
 						for (var x = 0; x < a.length; x++) {
 							$(a[x]).html(data[i].price_usd + " USD")
-							$(b[x]).html((data[i].percent_change_24h).concat("%"))
+							$(b[x]).html((data[i].percent_change_1h).concat("%"))
 						}
 					}
 					if (data[i].id == "cardano") {
@@ -325,14 +306,14 @@
 						var b = document.getElementsByClassName("ADA_Change")
 						for (var x = 0; x < a.length; x++) {
 							$(a[x]).html(data[i].price_usd + " USD")
-							$(b[x]).html((data[i].percent_change_24h).concat("%"))
+							$(b[x]).html((data[i].percent_change_1h).concat("%"))
 						}
 						if (data[i].id == "monero") {
 							var a = document.getElementsByClassName("XMR_Price")
 							var b = document.getElementsByClassName("XMR_Change")
 							for (var x = 0; x < a.length; x++) {
 								$(a[x]).html(data[i].price_usd + " USD")
-								$(b[x]).html((data[i].percent_change_24h).concat("%"))
+								$(b[x]).html((data[i].percent_change_1h).concat("%"))
 							}
 						}
 					}
