@@ -3394,6 +3394,7 @@
 		position: relative;
 		text-align: center;
 		z-index: 21;
+		max-width: 100%;
 	}
 
 		#banner:before {
@@ -3417,11 +3418,12 @@
 		#banner .content {
 			display: inline-block;
 			margin-right: 1%;
-			max-width: 95%;
+			max-width: 50%;
 			position: relative;
 			text-align: right;
 			vertical-align: middle;
 			z-index: 1;
+			padding: 0 0 0 0;
 		}
 
 			#banner .content header {
@@ -3572,12 +3574,6 @@
 
 			.dropotron.level-0 {
 				font-size: 1em;
-			}
-
-		/* Banner */
-
-			#banner .content {
-				padding: 4.5em;
 			}
 
 		/* Footer */
