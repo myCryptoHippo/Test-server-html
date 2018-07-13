@@ -1596,7 +1596,7 @@
 	}
 
 		a:hover {
-			color: #e44c65 !important;
+			/*color: #e44c65 !important;*/
 			border-bottom-color: transparent;
 		}
 
@@ -3528,8 +3528,10 @@
 			}
 
 			.imageFix {
-			width: 50vw;
+			width: 200vw;
 			height: 30vw;
+			float: left;
+			margin-left: 0px;
 			}
 
 	}
@@ -4147,3 +4149,482 @@
   #time{
 	  font-size: 1vh;
   }
+
+/*LANDING TOP BANNER*/
+
+#leftColumnTopBannerLanding{
+	width: 50%;
+	float: left;
+	margin-top: 15%;
+
+}
+
+#rightColumnTopBannerLanding {
+	width: 48%;
+	float: left;
+	margin-top:10%; 
+	margin-left: 0%;
+	text-align: left;
+	align-items: left;
+}
+
+
+ #landingTitle {
+	color:black;
+  	font-family: 'Open Sans';
+  	font-size:25pt;
+  	text-align: left;
+  	font-weight: bold;
+  	width: 80%;
+  	float: left;
+  	margin-left: 20%;
+ }
+
+ #landingDescription{
+ 	width: 60%;
+  	text-align: left;
+  	font-size: 16pt;
+  	color: #4D4D4D;
+  	margin-left: 20%;
+ }
+
+ #startTradingBtn{
+ 	color: white;
+  	background-color: #62B6DC;
+  	border: none;
+  	padding: 15px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 14px;
+  	border-radius: 5px;
+  	cursor: pointer;
+  	margin-left: 20%;
+  	margin-top: 5%;
+ }
+
+
+/*WHAT IS CRYPTOCURRENCY SECTION*/
+  #whatIsCryptoTitle{
+  	color:black;
+  	font-family: 'Open Sans';
+  	font-size:25pt;
+  	text-align: center;
+  	font-weight: bold;
+  }	
+
+  #whatIsCryptDescription{
+  	width: 50%;
+  	text-align: center;
+  	font-size: 16pt;
+  	color: black;
+  	margin-left: 25%;
+  }
+
+
+  /*Cryptocup section*/
+  #leftColumnCryptoCup {
+  	width: 45%;
+  	float: left;
+  	margin-left: 5%;
+  }
+
+  #rightColumnCryptoCup {
+  	width:50%;
+  	float: left;
+  	margin-left: 0%;
+  	margin-right: 0%;
+  	margin-bottom: 5%;
+  }
+
+  #CryptoCupTitle {
+  	color:black;
+  	font-family: 'Open Sans';
+  	font-size:25pt;
+  	text-align: left;
+  	font-weight: bold;
+  	margin-top: 10%;
+
+  }
+
+  #CryptoCupDescription{
+  	width: 100%;
+  	text-align: left;
+  	font-size: 16pt;
+  	margin-top: 2%;
+  	margin-bottom: 8%;
+  	color: black;
+  }
+
+  #LearnMorebtn{
+  	color: white;
+  	background-color: #62B6DC;
+  	border: none;
+  	padding: 15px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 14px;
+  	border-radius: 5px;
+  	cursor: pointer;
+  }
+
+  #sectionTitle{
+  	color:black;
+  	font-family: 'Open Sans';
+  	font-size:25pt;
+  	text-align: center;
+  	font-weight: bold;
+  	margin-top: 5%;
+  }
+
+  /*OUR FEATURES SECTION*/
+
+  #ourFeatures {
+  	height: 500px;
+  }
+
+
+  /*RISK FREE BOX*/
+  #riskFreeBox {
+	border: 4px solid #8D369B;
+  	width: 30%;
+  	height: 65%;
+  	padding-bottom: 1%;
+  	border-radius: 15px;
+  	float: left;
+  	margin-left: 4%;
+  }
+
+  #riskFreeTitle{
+  	color: #8D369B;
+  	font-weight: bold;
+  	padding-top: 3%;
+  	font-size: 20px;
+  }
+
+  #riskFreeDescription {
+  	color: black;
+  	font-size: 16px;
+  	margin-left: 9%;
+  	margin-right: 9%;
+  	padding-bottom: 10%;
+  	font-weight: bold;
+  	line-height: 22px;
+  	margin-top: 2%;
+  }
+
+/*FUN BOX*/
+#funBox {
+	border: 4px solid #F25896;
+  	width: 30%;
+  	height: 65%;
+  	padding-bottom: 1%;
+  	border-radius: 15px;
+  	float: left;
+  	margin-left: 3%;
+}
+
+#funTitle{
+  	color: #F25896;
+  	font-weight: bold;
+  	padding-top: 3%;
+  	font-size: 20px;
+  }
+
+#funDescription {
+  	color: black;
+  	font-size: 16px;
+  	margin-left: 9%;
+  	margin-right: 9%;
+  	padding-bottom: 10%;
+  	font-weight: bold;
+  	line-height: 22px;
+  	margin-top: 2%;
+  }
+
+  /*GLOBAL BOX*/
+#globalBox {
+	border: 4px solid #46B7E0;
+  	width: 30%;
+  	height: 65%;
+  	padding-bottom: 1%;
+  	border-radius: 15px;
+  	float: left;
+  	margin-left: 3%;
+}
+
+#globalTitle{
+  	color: #46B7E0;
+  	font-weight: bold;
+  	padding-top: 3%;
+  	font-size: 20px;
+  }
+
+#globalDescription {
+  	color: black;
+  	font-size: 16px;
+  	margin-left: 9%;
+  	margin-right: 9%;
+  	padding-bottom: 10%;
+  	font-weight: bold;
+  	line-height: 22px;
+  	margin-top: 2%;
+  }
+
+/*PRIZES BOX*/
+#prizesBox {
+	border: 4px solid #46B7E0;
+  	width: 30%;
+  	height: 65%;
+  	padding-bottom: 1%;
+  	border-radius: 15px;
+  	float: left;
+  	margin-left: 20%;
+  	margin-top: 2%;
+}
+
+#prizesTitle{
+  	color: #46B7E0;
+  	font-weight: bold;
+  	padding-top: 3%;
+  	font-size: 20px;
+  }
+
+#prizesDescription {
+  	color: black;
+  	font-size: 16px;
+  	margin-left: 9%;
+  	margin-right: 9%;
+  	padding-bottom: 10%;
+  	font-weight: bold;
+  	line-height: 22px;
+  	margin-top: 2%;
+  }
+
+  /*EASY BOX*/
+#easyBox {
+	border: 4px solid #8D369B;
+  	width: 30%;
+  	height: 65%;
+  	padding-bottom: 1%;
+  	border-radius: 15px;
+  	float: left;
+  	margin-left: 3%;
+  	margin-top: 2%;
+}
+
+#easyTitle{
+  	color: #8D369B;
+  	font-weight: bold;
+  	padding-top: 3%;
+  	font-size: 20px;
+  }
+
+#easyDescription {
+  	color: black;
+  	font-size: 16px;
+  	margin-left: 9%;
+  	margin-right: 9%;
+  	padding-bottom: 10%;
+  	font-weight: bold;
+  	line-height: 22px;
+  	margin-top: 2%;
+  }
+
+/*LEARNING FURTHER SECTION*/ 
+#learningFurtherSection{
+	background-color: white;
+	height: 200px;
+	margin-top: 20%;
+}
+
+#leftColumn_LearningFurther {
+	width: 50%;
+	float: left;
+  }
+
+#rightColumn_LearningFurther {
+	width: 40%;
+	float: left;
+	margin-right: 5%;
+	margin-left: 5%;
+  }
+
+#learningFurtherTitle{
+	color:black;
+  	font-family: 'Open Sans';
+  	font-size:35px;
+  	text-align: left;
+  	font-weight: bold;
+  	margin-top: 10%;
+}
+
+#learningFurtherDescription {
+	color: #333333;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: left;
+	margin-bottom: 15%;
+
+  }
+
+ #takeMeThereBtn{
+ 	color: white;
+  	background-color: #62B6DC;
+  	border: none;
+  	padding: 15px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 14px;
+  	border-radius: 5px;
+  	cursor: pointer;
+ }
+
+ /*JOIN TODAY SECTION*/
+#joinTodaySection {
+	color: #8D369B;
+	font-weight: 900;
+	font-family: 'Open Sans';
+  	font-size: 35px;
+  	margin-top: 27%;
+  	margin-bottom: 2%;
+}
+
+#getThatMoneyBtn{
+	color: white;
+  	background-color: #62B6DC;
+  	border: none;
+  	padding: 15px 53px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 14px;
+  	border-radius: 5px;
+  	margin-left: 42%;
+  	margin-top: 3%;
+  	margin-bottom: 0%;
+  	cursor: pointer;
+}
+
+
+/*FOOTER*/
+#footerGetExclusiveContent{
+	background-color: #8D369B;
+	height: 300px;
+  	padding-left: 12%;
+}
+
+#leftColumnFooter{
+	float: left;
+	width: 55%
+}
+
+#rightColumnFooter{
+	float: left;
+	width: 31%;
+	text-align: right;
+	padding-top: 5%;
+	color: white;
+	font-weight: bold;
+}
+
+#footerTitle{
+	color: white;
+	font-size: 22px;
+	font-family: 'Open Sans';
+	font-weight: bold;
+	padding-top: 10%;
+}
+
+#footerDescription{
+	color: white;
+	font-size: 14px;
+	font-family: 'Open Sans';
+	line-height: 20px;
+	margin-top: 2%;
+	width: 58%;
+}
+
+/*FOOTER TEXT FIELDS*/
+
+#lblFirstName{
+	color: white;
+	font-size: 12px;
+	font-family: 'Open Sans';
+	padding-top: 9%;
+	margin-bottom: 0%;
+}
+
+#firstNameTxtField {
+	background-color: white;
+	color: black;
+	width: 200px;
+	height: 38px;
+	margin-top: 0%;
+	margin-right: 0%;
+	padding-right: 0%;
+}
+
+#lblemail{
+	color: white;
+	font-size: 12px;
+	font-family: 'Open Sans';
+	padding-top: 11%;
+	margin-bottom: 0%;
+	
+}
+
+#emailTxtField{
+	background-color: white;
+	color: black;
+	width: 200px;
+	height: 38px;
+	margin-top: 0%;
+	margin-right: 0%;
+	padding-right: 0%;
+}
+
+#txtFieldLeft{
+	float: left;
+	width: 25%
+	margin-right:2%;
+}
+
+#txtFieldRight{
+	float: left;
+	width: 25%;
+	margin-left: 2%;
+}
+
+#submitBtn{
+	color: black;
+  	background-color: white;
+  	border: none;
+  	padding: 10px 21px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 12px;
+  	border-radius: 5px;
+  	margin-left: 8%;
+  	margin-top: 48px;
+  	margin-bottom: 0%;
+  	cursor: pointer;
+}
+
+#footerLinks {
+	cursor:pointer;
+	text-decoration: none;
+	color: white;
+}
+
+#footerIcons {
+	padding-top: 20%;
+}
+
+
+
+
+

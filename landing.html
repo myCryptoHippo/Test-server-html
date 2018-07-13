@@ -18,7 +18,7 @@
 </head>
 
 <body class="landing">
-	<div id="page-wrapper">
+	<div>
 
 		<!-- Header -->
 		<header id="header">
@@ -29,6 +29,9 @@
 			</h1>
 			<nav id="nav">
 				<ul>
+					<li>
+						<a href="#">CryptoCup</a>
+					</li>
 					<li>
 						<a href="index.html">About Us</a>
 					</li>
@@ -49,29 +52,19 @@
 
 		<!-- Banner -->
 		<section id="banner">
-			<div class="content contentFix1">
-				<header>
-					<h2>Cryptocurrency made easy </h2>
-					<h2>through a simulation game.</h2>
-					<p class="scalefix" style="color:grey;">Start with 10, 000 virtual dollars and learn how to trade.</p>
-					<p>
-						<div class="style1">
-							<div class="3u 6u(medium) 12u$(xsmall)">
-								<ul class="actions vertical">
-									<li class="scalefix">
-										<a href="signup.php" class="button special">Sign Up to Start Trading</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-                    </p>
-				</header>
+			<div id="leftColumnTopBannerLanding">
+				<h2 id="landingTitle">Cryptocurrency made easy through a simulation game.</h2>
+				<p id="landingDescription">Create a free account with 10k virtual dollars and learn how to buy and sell cryptocurrencies with real time prices.</p>
+				<p align="left"><button id="startTradingBtn">Start Trading</button></p>
+
+			</div>
+			<div id="rightColumnTopBannerLanding">
+				<img src="images/Macbook.png" alt="" class="imageFix" style="max-width: 100%;">
+				
 			</div>
 
-			<div class="content contentFix2">
-				<img src="images/Macbook.png" alt="" class="imageFix" style="max-width: 100%;">
-			</div>
-			<a href="#one" class="goto-next scrolly">Next</a>
+			
+			
 		</section>
 
 		<!--Ticker-->
@@ -141,78 +134,165 @@
 
 
 
-		<!-- Two -->
-		<section style ="background: white;" class="breakwrapper">
-			<div style="margin-top:0vh; text-align:center;">
-
-				<h2 classstyle="color:black; font-size:3em; font-family: 'Open Sans', sans-serif;">What is cryptocurrency?</h2>
-			</div>
-			<div style="margin-top:0vh; text-align:center; margin-left:15vw; margin-right:15vw;font-size:2em;line-height:1em;">
-                <p style="color: black; font-family: 'Nunito', sans-serif;">A cryptocurrency is a completely digital, decentralized currency running on blockchain technology. </p>
-                <p style="color: black; font-family: 'Nunito', sans-serif;">It is not controlled by any central figure, like a bank or government, and ensures complete anonymity. It is revolutionizing the way we exchange
-					money.</p>
-			</div>
-		</section>
-
-
-
 		<!-- Four -->
 		<section style="background: white" id="four" class="wrapper style1 special fade-up">
+			
 			<div style="background: white;" class="container">
-				<header class="major">
-					<h2 style="color:black; font-size:3em; font-family: 'Open Sans', sans-serif;">How to get Started</h2>
-				</header>
-				<div class="box alt">
+				<h2 id="whatIsCryptoTitle">What is cryptocurrency?</h2>
+				<p id="whatIsCryptDescription">Cryptocurrency is an entirely digital currency which runs on blockchain technology. Blockchain ensures complete anonymity and security of transactions. Cryptocurrencies are redefining the way we exchange money. 
+                </p>
+                <center><hr width="40%" font color="D49DCE" margin-bottom: 0%></center>
+	
+				<h5 id = "sectionTitle">How to get Started</h5>
+			
+				<div>
 					<div class="row uniform">
 						<section class="4u 6u(medium) 12u$(xsmall)">
-							<img src="images/get_money.png">
-							<h3 style="color:black">1. Play with virtual money</h3>
-							<p style="color: black;">Start with 10, 000 virtual dollars to play with crypto in a market simulator.</p>
+							<img src="images/GetMoney.png">
+							<h3 style="color:black">1. Get Money</h3>
+							<p style="color: black;">Sign up and start with 10k virtual dollars.</p>
 						</section>
 						<section class="4u 6u$(medium) 12u$(xsmall)">
-							<img src="images/trade.png">
-							<h3 style="color:black;">2. Learn to trade</h3>
-							<p style="color: black;">Learn to trade cryptocurrency using market data from the top coins.</p>
+							<img src="images/Trade (1).png">
+							<h3 style="color:black;">2. Trade</h3>
+							<p style="color: black;">Trade on the market place and compete with friends.</p>
 						</section>
 						<section class="4u$ 6u(medium) 12u$(xsmall)">
-							<img src="images/learn.png">
-							<h3 style="color: black:">3. Compete with friends</h3>
-							<p style="color: black;">View leaderboards with your friends to see who can grow their portfolio successfully.</p>
+							<img src="images/Learn (1).png">
+							<h3 style="color: black:">3. Learn</h3>
+							<p style="color: black;">Learn how to buy and sell cryptocurrencies.</p>
 						</section>
 					</div>
+					<center><hr width="40%" font color="D49DCE"></center>
 				</div>
-				<footer class="major">
-					<ul class="actions">
-						<li>
-							<a href="signup.php" class="button">Sign me up!</a>
-						</li>
-					</ul>
-				</footer>
+
+				<!-------------------- CRYPTOCUP INFO SECTION ---------->
+				<div>
+					<section id = "leftColumnCryptoCup">
+						<h5 id = "CryptoCupTitle">CryptoCup</h5>
+						<p id = "CryptoCupDescription">You win some, you learn some. Compete in myCryptoHippo's CryptoCup to earn prizes while you learn. Are you the next richest hippo?</p>
+
+						<p align="left"><button id="LearnMorebtn">Learn More</button></p>
+					</section>
+
+					<section id = "rightColumnCryptoCup">
+						<img src="images/CryptoCupCrop.png">
+					</section>
+				
+				</div>
+
+				<!-------------------OUR FEATURES SECTION-------------->
+				
+					<h5 id = "sectionTitle">Our features</h5>
+					<div id="ourFeatures">
+						<section id="riskFreeBox">
+							<img src="images/RiskFree.png" style="margin-top: 13%">
+							<p id="riskFreeTitle">Risk Free</p>
+							<p id="riskFreeDescription">Our platform uses virtual dollars so you can trade to your heart's desire and is free to use. Anyone can play.</p>
+						</section>
+
+						<section id="funBox">
+							<img src="images/Fun.png" style="margin-top: 13%">
+							<p id="funTitle">Fun</p>
+							<p id="funDescription">With missions, challenges, competitions, and prizes, there's always something new to discover.</p>
+						</section>
+
+						<section id="globalBox">
+							<img src="images/Global.png" style="margin-top: 13%">
+							<p id="globalTitle">Compete with users globally</p>
+							<p id="globalDescription">Play against users around the world on the mission to be the richest hippo of the herd.</p>
+						</section>
+
+						<section id="prizesBox">
+							<img src="images/Prizes.png" style="margin-top: 13%">
+							<p id="prizesTitle">Earn Prizes</p>
+							<p id="prizesDescription">Play for free and earn prizes on the way. With competitions like CryptoCup, win some while you learn some.</p>
+						</section>
+
+						<section id="easyBox">
+							<img src="images/Easy.png" style="margin-top: 13%">
+							<p id="easyTitle">Earn Prizes</p>
+							<p id="easyDescription">Play for free and earn prizes on the way. With competitions like CryptoCup, win some while you learn some.</p>
+						</section>
+
+					</div>
+
+					<!---- TAKE YOUR LEARNING FURTHER SECTION---->	
+					<div id="learningFurtherSection">
+						<section id="leftColumn_LearningFurther">
+							<img src="images/ResourcesBanner.png">
+						</section>
+
+						<section id="rightColumn_LearningFurther">
+							<h5 id = "learningFurtherTitle">Take your learning further with our resources</h5>
+							<p id="learningFurtherDescription">What's bitcoin? Ethereum? All of these definitions and more available on our resources page. Resources hand-picked by our team all in one place.</p>
+							<p align="left"><button id="takeMeThereBtn">Take me there</button></p>
+						</section>
+					</div>
+
+					<!----------- JOIN TODAY SECTION------------>
+					<div id="joinTodaySection">
+						<p style="line-height: 50px;">A hands on learning experiance.</p>
+						<p>Join today and start with 10k</p>
+						<p align="left"><button id="getThatMoneyBtn">Get that money</button></p>
+					</div>
 			</div>
 		</section>
 
+
+
 		<!-- Five -->
-		<section id="five" class="wrapper style2 special fade">
-			<div class="container">
-				<header>
-					<h2 style="color:white">A hands-on learning experience.</h2>
-					<p>Join today and start with 10, 000.</p>
-				</header>
-				<form method="post" action="#" class="container 50%">
-					<div class="row uniform 50%">
-						<div class="8u 12u$(xsmall)">
-							<input type="email" name="email" id="email" placeholder="Your Email Address" />
+		<section>
+			<div>
+				<section id="footerGetExclusiveContent">
+					<section id="leftColumnFooter">
+						<p id="footerTitle">Get Exclusive Content</p>
+						<p id="footerDescription">Sign up and get exclusive updates from our community with latest updates from myCryptoHippo</p>
+						
+						<div id="txtFieldLeft">
+							<form>
+							<label id="lblFirstName" for="fname">First Name</label>
+							<input id="firstNameTxtField" type="text" name="firstname" placeholder="Your name">
+							</form>
 						</div>
-						<div class="4u$ 12u$(xsmall)">
-							<input type="submit" value="Get Started" class="fit special" />
+
+						<div id="txtFieldRight">
+							<form action="/action_page.php">
+							<label id="lblemail" for="fname">Email</label>
+							<input id="emailTxtField" type="text" name="email" placeholder="Your email">
+							</form>
 						</div>
-					</div>
-				</form>
+							<p><button id="submitBtn">Submit</button></p>
+					</section>
+
+					<section id="rightColumnFooter">
+						<p><a herf = "" id="footerLinks">About Us</a></p>
+						<p><a herf = "" id="footerLinks">Resources</a></p>
+						<section id="footerIcons"> 
+							<ul class="icons">
+								<li>
+				                    <a href="https://medium.com/mycryptohippo/welcome-to-behindtheproduct-571825990f29"><img src="images/Medium-Icon.png"></a>
+								</li>
+								<li>
+									<a href="https://www.instagram.com/myCryptoHippo/"><img src="images/Instagram-Icon.png"></a>
+								</li>
+								<li>
+				                    <a href="https://www.facebook.com/mycryptohippo/?ref=br_rs"><img src="images/Facebook-Icon.png"></a>
+								</li>
+								<li>
+				                    <a href="https://twitter.com/myCryptoHippo"><img src="images/Twitter-icon.png"></a>
+								</li>
+					
+							</ul>
+						</section>
+					</section>
+					
+				</section>
 			</div>
 		</section>
 
 		<!-- Footer -->
-		<footer id="footer">
+		<!--<footer id="footer">
 			<ul class="icons">
 				<li>
                     <a href="https://medium.com/mycryptohippo/welcome-to-behindtheproduct-571825990f29"><img src="images/Medium-Icon.png"></a>
@@ -238,9 +318,9 @@
 				<li>&copy; myCryptoHippo. All rights reserved. </li>
 				
 			</ul>
-		</footer>
+		</footer> -->
 
-		</div>
+		
 
 		<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
